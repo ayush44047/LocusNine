@@ -1,0 +1,49 @@
+
+   <button class="close_ico">
+      <mat-icon svgIcon="ico_close"  (click)="onClose()">Clear</mat-icon> 
+      </button>
+      
+  <span class ="text-dialog" style="margin-bottom:-20px; color:black;">{{service.form.controls['userid'].value?"Modify User":"Add User"}}</span>
+  <button mat-icon-button class = "delete_ico" color="warn" [hidden]="service.form.value.userid==null" (click)="onDelete(service.form.value.userid)"> <mat-icon>delete_outline</mat-icon></button>
+  
+
+
+
+
+<form [formGroup]="service.form" class="normal-form" >
+  <mat-grid-list cols="1" rowHeight="400px"style="margin-top:-25px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" formControlName="userid">
+        <mat-form-field appearance="outline">
+          <input formControlName="fullname" matInput placeholder="Full Name">
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <input formControlName="email" matInput placeholder="Email">
+          <mat-error *ngIf="service.form.controls['email'].errors?.email">EMail format is not valid</mat-error>
+          <mat-error *ngIf="service.form.controls['email'].errors?.required">This field is mandatory.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <input formControlName="mobile" matInput placeholder="Mobile Number(Optional)">
+          <mat-error *ngIf="service.form.controls['mobile'].errors?.minlength">Phone number should contain 10 digits</mat-error>
+        </mat-form-field>
+
+
+        <mat-radio-group formControlName="roleid">
+          <mat-radio-button value='1' class="radio-but">Admin</mat-radio-button>&nbsp;&nbsp;
+          <mat-radio-button value='2' class="radio-but">Customer Executive</mat-radio-button>
+          <mat-error *ngIf="service.form.controls['rolename'].errors?.required">This field is mandatory.</mat-error>
+        </mat-radio-group>
+        <div class="add-bottom-padding">
+          <div class="button-row">
+            <button mat-button type="submit" [disabled]="service.form.invalid" (click)="onSubmit()">Submit</button>
+          </div>
+        </div>
+
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

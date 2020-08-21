@@ -1,0 +1,70 @@
+<div class="comp-div">
+  <div class="search-div">
+    <div class="search-div1">
+      <mat-icon svgIcon="ico_users" class="ico-users">User</mat-icon>&nbsp;&nbsp;Users
+    </div>
+    <div class="search-div2">
+
+      <mat-form-field class="search-form-field" floatLabel="never" >
+        <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+        <button mat-button matSuffix mat-icon-button aria-label="Search">
+          <mat-icon svgIcon="ico_search">Search</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-button class="mat-butt" style="margin: 10px;" (click)="onCreate()">
+        <mat-icon>add</mat-icon>Add User
+      </button>
+    </div>
+  </div>
+  <div class="mat-elevation-z1">
+    <mat-table [dataSource]="listData" matSort>
+
+      <ng-container matColumnDef="fullname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.fullname}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>EMAIL</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.email}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="rolename">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>ROLE TYPE</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.rolename}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>STATUS</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+        <div *ngIf="(element.userid)%2==0"><mat-icon class="tab-icon"  svgIcon="ico_active">Active</mat-icon>Active</div>
+        <div *ngIf="(element.userid)%11==0"><mat-icon class="tab-icon" svgIcon="ico_inactive">Inactive</mat-icon>Inactive</div>
+        <div *ngIf="(element.userid)%7==0"> <mat-icon class="tab-icon" svgIcon="ico_pending">Pending</mat-icon>Pending</div>
+      </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-icon-button>
+            <mat-icon svgIcon="ico_edit"(click)="onEdit(row)">launch</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+          Loading data...
+        </mat-footer-cell>
+      </ng-container>
+      <ng-container matColumnDef="noData">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+          No data.
+        </mat-footer-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      <mat-footer-row *matFooterRowDef="['loading']" [ngClass]="{'hide':listData!=null}"></mat-footer-row>
+      <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(listData!=null && listData.data.length==0)}"></mat-footer-row>
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+
+  </div>
+</div>

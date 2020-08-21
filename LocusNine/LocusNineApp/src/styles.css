@@ -1,0 +1,283 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+.mat-toolbar{
+    /* background-color: rgba(0, 0, 0, 0.685 ); */
+    background-color: black;
+    color:white;
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+.icon-text{
+    position: relative;
+    top:3px;
+    font-size: 15px;
+    
+}
+.tab-icon{
+    transform: scale(0.5) !important;
+    vertical-align: middle;
+}
+.ico-users{
+    vertical-align: top;
+}
+.nav-brand-icon{
+    transform: scale(4) !important;
+    margin-left:35px;
+    vertical-align: middle;
+    margin-right:35px;
+    
+}
+.nav-icon{
+    transform: scale(0.75) !important;
+    vertical-align: middle;
+    position: relative;
+    top:3px;  
+    
+}
+.text-dialog{
+    position:absolute;
+    left:540px;
+    font-size:25px;
+    color:gray;
+}
+.close_ico{
+    transform: scale(0.5) !important;
+    position:relative;
+    left:280px; 
+    bottom:22px; 
+}
+.delete_ico{
+    transform: scale(1.5) !important;
+    position: relative;
+    left:120px;
+    bottom:2px;
+
+}
+.nav-icon-notif{
+    transform: scale(1) !important;
+    vertical-align: middle;
+    position: relative;
+    top:3px;
+
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+}
+button:hover{
+    color: rgb(255, 187, 0);
+}
+
+
+
+.mat-toolbar > div{
+    margin:15px;
+    
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+
+  
+}
+.flex-container > div {
+    color:white;
+    vertical-align: bottom;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.mat-button:hover{
+    color: rgb(255, 187, 0);
+}
+
+
+  form.normal-form{
+    margin: 10px;
+}
+.mat-select{
+    color:white;
+}
+
+.controles-container{
+    width: 100%;  
+    font-size: 12px;
+
+}
+
+
+
+.controles-container > * {
+    width: 100%;
+    font-size: 12px;
+ }
+
+    .add-bottom-padding{
+        padding-top : 20;
+        padding-bottom: 30px;
+    } */
+
+ .radio-but{
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.button-row button{
+    margin-top: 10px;
+    background-color: rgb(255, 187, 0);
+    color: #fff;
+    width: 100%;
+    margin-bottom:25px;
+
+;
+ 
+
+}
+.txt-box{
+    line-height: 55px;
+}
+.mat-header-cell{
+
+    font-weight: bold;
+    color : black;
+}
+.mat-column-actions {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 5% !important;
+    width: 5% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+.hide{
+    display:none;
+}
+mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style: italic;
+}
+.comp-div{
+    background-color: rgb(70, 70, 70);
+}
+.search-div{
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top:40px;
+  
+    background-color: white;
+    border-bottom: 1px solid rgb(240, 240, 240);
+      }
+.search-div1{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top:20px;
+    
+    background-color: white;
+    
+    float:left;
+    font-size: 25px;
+    color: rgb(177, 174, 174);
+    align-self: auto;  
+      }
+.search-div2{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top:40px;
+    text-align: right;
+    background-color: white;
+ }
+
+
+
+      
+      .search-form-field{
+          width: 60%;
+          margin-left: 10px;
+          padding: 5px 10px;
+          background-color:white;
+          border: 1px rgb(209, 209, 209) solid;
+          width:300px;
+          margin: 10px;
+          margin-right: 20px;
+          }
+          .search-form-field div.mat-form-field-underline {
+            display: none;
+            
+        }
+        .search-form-field div.mat-form-field-infix{
+            border-top: 0px;
+        }
+        .search-form-field div.mat-form-field-wrapper{
+          padding-bottom: 0px;
+      }
+      .search-form-field div.mat-form-field-suffix button{
+          height: 32px;
+          width: 32px;
+      }
+.mat-butt{
+    background-color: rgb(255, 187, 0);
+    color: white;
+    height: 44.44px;    
+}
+
+.mat-elevation-z1{
+    margin-left:40px;
+    margin-right:30px;
+    margin-bottom: 40px;
+
+    
+}
+.text-users{
+    margin-left:50px;
+}
+.mat-row:nth-child(even){
+    background-color:white;
+    }
+
+.mat-row:nth-child(odd){
+    background-color:rgb(248, 248, 248);
+    }
+.user-dialog .mat-dialog-container {
+        overflow-y: hidden !important;
+      }
+/* notification */
+snack-bar-container.success {
+    background-color: #5cb85c;
+    color : #fff;
+  }
+
+  snack-bar-container.warn {
+    background-color: #f99157;
+    color : #fff;
+  }
+
+
+  snack-bar-container.notification simple-snack-bar{
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+ 

@@ -1,0 +1,45 @@
+<mat-toolbar class="app-toolbar">
+  <div>
+    <button mat-button>
+      <mat-icon svgIcon="Logo" class="nav-brand-icon">Logo</mat-icon>
+    </button>
+  </div>
+
+  <div class=flex-container>
+    <div>
+      <button mat-button>
+        <mat-icon svgIcon="ico_dashboard" class="nav-icon">Dashboard</mat-icon>
+        <span class="icon-text">&nbsp;&nbsp;Dashboard</span>
+      </button>
+    </div>
+    <div>
+      <button mat-button>
+        <mat-icon svgIcon="ico_users" class="nav-icon">Users</mat-icon>
+        <span class="icon-text">&nbsp;&nbsp;Users</span>
+      </button>
+    </div>
+
+    <div>
+      <button mat-button>
+        <mat-icon svgIcon="ico_sessionmanager" class="nav-icon">Session Manager</mat-icon>
+        <span class="icon-text">&nbsp;&nbsp;Session Manager</span>
+      </button>
+    </div>
+  </div>
+  <div class=flex-container style=" position:absolute;right: 0px;">
+    <div>
+      <button>
+        <mat-icon svgIcon="notifications_bell" class="nav-icon-notif">Notifications</mat-icon>
+      </button>
+    </div>
+    <div>
+      <button mat-button>
+        <mat-icon svgIcon="ico_user" class="nav-icon">User</mat-icon>
+        <span class="icon-text">&nbsp;&nbsp;Ayush Pandey&nbsp;&nbsp;</span>
+        <mat-icon svgIcon="ico_downarrow" class="nav-icon">User</mat-icon>
+      </button>
+    </div>
+  </div>
+
+</mat-toolbar>
+<app-user-list></app-user-list>

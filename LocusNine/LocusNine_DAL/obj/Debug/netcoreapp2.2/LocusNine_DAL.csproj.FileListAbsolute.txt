@@ -1,0 +1,12 @@
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\LocusNine_DAL.deps.json
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\LocusNine_DAL.dll
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.AssemblyInfoInputs.cache
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.AssemblyInfo.cs
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\LocusNine_DAL.runtimeconfig.json
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\LocusNine_DAL.runtimeconfig.dev.json
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\LocusNine_DAL.pdb
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.dll
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.pdb
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\obj\Debug\netcoreapp2.2\LocusNine_DAL.csprojAssemblyReference.cache
+C:\Users\Ayush\source\repos\LocusNine\LocusNine_DAL\bin\Debug\netcoreapp2.2\appsettings.json
